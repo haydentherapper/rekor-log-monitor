@@ -1,0 +1,18 @@
+name: Consistency proof
+
+on:
+  schedule:
+    - cron: '0 * * * *' # every hour
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  run_consistency_proof:
+    permissions:
+      contents: read
+      issues: write
+    uses: haydentherapper/rekor-monitor/.github/workflows/reuseable_monitoring.yaml@c7750fc17c6d4638002e089eba97ad5ac2f7b906
+    with:
+      file_issue: true
+
