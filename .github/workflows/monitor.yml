@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: read
       issues: write
-    uses: haydentherapper/rekor-monitor/.github/workflows/reuseable_monitoring.yaml@c7750fc17c6d4638002e089eba97ad5ac2f7b906
+    uses: haydentherapper/rekor-monitor/.github/workflows/reusable_monitoring.yml@reusable-workflow-right
     with:
       file_issue: true
 
