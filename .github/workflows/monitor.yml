@@ -17,6 +17,9 @@ jobs:
     with:
       file_issue: true
       identities: |
-        hblauzvern@google.com
-        asraa@google.com https://accounts.google.com
+        certIdentities:
+          - certSubject: hblauzvern@google.com
+        subjects:
+          - hblauzvern@google.com
+
 
