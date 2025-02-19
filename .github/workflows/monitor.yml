@@ -14,3 +14,5 @@ jobs:
       issues: write
       id-token: write
     uses: sigstore/rekor-monitor/.github/workflows/reusable_monitoring.yml@main
+    with:
+      file_issue: true
