@@ -16,9 +16,3 @@ jobs:
     uses: sigstore/rekor-monitor/.github/workflows/reusable_monitoring.yml@main
     with:
       file_issue: true
-      config: |
-        monitoredValues:
-          certIdentities:
-            - certSubject: hblauzvern@google.com
-          subjects:
-            - hblauzvern@google.com
